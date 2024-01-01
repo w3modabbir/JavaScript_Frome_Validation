@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="form">
+        <div class="headline">
+            <h2>Registration Form</h2>
+        </div>
+        <form action="#" method="POST">
+            <div class="field">
+                <input id="fullname" type="text" placeholder=" Enter Your Name">
+                <p class="err-msg" id="name_eror"></p>
+            </div>
+            <div class="field">
+                <input id="email_address" type="email" placeholder=" Enter Your email">
+                <p class="err-msg" id="email_eror"></p>
+            </div>
+            <div class="field pass-field">
+                <input id="password" type="password" placeholder=" Your Password">
+                <p class="err-msg" id="pass_eror"></p>
+                <i class="fa fa-eye" onclick="showpass()"></i>
+            </div>
+            <div class="field pass-field">
+                <input id="confirm_password" type="password" placeholder=" Confirm Password">
+                <p class="err-msg" id="confirm_pass_eror"></p>
+            </div>
+            <div class="field">
+                <textarea id="massge" placeholder="Your Massage"></textarea>
+                <p class="err-msg" id="massage_eror"></p>
+            </div>
+            <div class="gender">
+                <input type="radio" name="gender" id="gender1"><span>male</span>
+                <input type="radio" name="gender" id="gender2"><span>female</span>
+                <input type="radio" name="gender" id="gender3"><span>others</span>
+                <p class="err-msg" id="gender_eror"></p>
+            </div>
+            <div class="sub">
+                <button type="submit" onclick=" return sub()">Submit</button>
+            </div>
+        </form>
+</div>
+
+
+
+
+
+
+
+
+<script src="js/custom.js"></script>   
+</body>
+</html>
